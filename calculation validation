@@ -1,0 +1,28 @@
+ if (ddl10thMarkType.SelectedValue == "2")
+        {
+            int maxmimummark = Convert.ToInt32(txtMaxMarkMatric.Text);
+            int markobtained = Convert.ToInt32(txtMarkObtainedMatric.Text);
+            int result = markobtained * 100 / maxmimummark;
+            txtPerMatric.Text = Convert.ToString(result);
+        }
+        if (ddlPlusTwoMarkType.SelectedValue == "2")
+        {
+            int maxmimummark = Convert.ToInt32(txtMaxMarkPlusTwo.Text);
+            int markobtained = Convert.ToInt32(txtMarkObtainedPlusTwo.Text);
+            int result = markobtained * 100 / maxmimummark;
+            txtPercentagePlusTwo.Text = Convert.ToString(result);
+        }
+        if (ddl10thMarkType.SelectedValue == "1")
+        {
+
+            double CGPAobtained = Convert.ToDouble(txtMarkObtainedMatric.Text);
+            double Percentage = CGPAobtained * 9.5;
+            txtPerMatric.Text = Convert.ToString(Percentage);
+        }
+        if (ddlPlusTwoMarkType.SelectedValue == "1")
+        {
+
+            double CGPAobtained = Convert.ToDouble(txtMarkObtainedPlusTwo.Text);
+            double Percentage = Convert.ToDouble(CGPAobtained * 9.5);
+            txtPercentagePlusTwo.Text = Convert.ToString(Percentage);
+        }
